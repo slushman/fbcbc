@@ -1,0 +1,11 @@
+<!-- This is a placeholder for the church exterior image -->
+<!-- Replace with actual church photo -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  <text x="300" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#495057">
+    Church Exterior Photo
+  </text>
+  <text x="300" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">
+    (Placeholder - Replace with actual image)
+  </text>
+</svg>

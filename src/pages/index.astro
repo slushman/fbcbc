@@ -1,0 +1,219 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="FBC BC - A Welcoming Community Rooted in Faith | First Baptist Church Bragg City" 
+  description="First Baptist Church Bragg City (FBC BC) is a welcoming Southern Baptist community serving Dunklin and Pemiscot Counties in southeast Missouri. Join us for worship Sundays at 11 AM & 5 PM."
+>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="church-logo">
+              <img 
+                src="/images/logo.jpg" 
+                alt="FBC BC - First Baptist Church Bragg City Logo"
+                width="200"
+                height="100"
+                loading="eager"
+              />
+            </div>
+            <h1 id="hero-heading">A Welcoming Community Rooted in Faith</h1>
+            <h2 class="hero-subtitle">Serving families and friends throughout Dunklin and Pemiscot Counties</h2>
+            <a href="#service-times" class="btn btn-primary" aria-describedby="join-us-description">
+              Join Us This Sunday
+            </a>
+            <div id="join-us-description" class="sr-only">
+              Navigate to service times section to see when we meet for worship
+            </div>
+          </div>
+          <div class="hero-image">
+            <img 
+              src="/images/church-exterior.jpg" 
+              alt="Exterior view of First Baptist Church Bragg City, a welcoming brick building with traditional architecture"
+              width="600"
+              height="400"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Our Church</h2>
+        <div class="about-content">
+          <p>
+            FBC BC is a small Southern Baptist church committed to serving southeast Missouri. 
+            We exist to glorify God through worship, teaching, and fellowship. Whether you're 
+            new to church or have been attending for years, you're welcome here.
+          </p>
+          <p>
+            Our congregation values authentic relationships, biblical teaching, and practical 
+            faith that makes a difference in our community. We believe that everyone has a 
+            place in God's family, and we'd love to help you discover yours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Times -->
+    <section class="service-times section" id="service-times" aria-labelledby="service-times-heading">
+      <div class="container">
+        <h2 id="service-times-heading">Service Times</h2>
+        <div class="service-schedule">
+          <div class="service-item">
+            <h3>Sunday Services</h3>
+            <div class="time-slots">
+              <div class="time-slot">
+                <span class="time">10:00 AM</span>
+                <span class="service-type">Sunday School</span>
+              </div>
+              <div class="time-slot">
+                <span class="time">11:00 AM</span>
+                <span class="service-type">Morning Worship</span>
+              </div>
+              <div class="time-slot">
+                <span class="time">5:00 PM</span>
+                <span class="service-type">Evening Service</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <h3>Wednesday Service</h3>
+            <div class="time-slots">
+              <div class="time-slot">
+                <span class="time">5:00 PM</span>
+                <span class="service-type">Prayer Service</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location section" aria-labelledby="location-heading">
+      <div class="container">
+        <h2 id="location-heading">Find Us</h2>
+        <div class="location-content">
+          <div class="address">
+            <h3>Our Address</h3>
+            <address>
+              151 W Second St<br>
+              Bragg City, MO 63827
+            </address>
+            <a 
+              href="https://maps.google.com/?q=151+W+Second+St,+Bragg+City,+MO+63827" 
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open church location in Google Maps (opens in new tab)"
+            >
+              View on Google Maps
+            </a>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.3215677547393!2d-89.91366008513257!3d36.26865608472045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f4b5c8c8c8c8c%3A0x1234567890abcdef!2s151%20W%202nd%20St%2C%20Bragg%20City%2C%20MO%2063827!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus"
+              width="500"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map showing First Baptist Church Bragg City location at 151 W Second St, Bragg City, MO 63827"
+              aria-label="Interactive map showing church location">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section class="what-to-expect section" aria-labelledby="expect-heading">
+      <div class="container">
+        <h2 id="expect-heading">What to Expect</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>What should I wear?</h3>
+            <p>Whatever makes you comfortable—most people dress casually. You'll find everything from jeans to Sunday best, and all are welcome.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you have childcare?</h3>
+            <p>We're a family-oriented church where all are welcome. Children are always welcome in our services as part of our church family.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Is it okay to just visit?</h3>
+            <p>Absolutely—we'd love to meet you. There's no pressure, just genuine hospitality and a warm welcome for everyone who walks through our doors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Beliefs -->
+    <section class="beliefs section" aria-labelledby="beliefs-heading">
+      <div class="container">
+        <h2 id="beliefs-heading">Our Beliefs</h2>
+        <div class="beliefs-content">
+          <p>
+            FBC BC is a Southern Baptist congregation. We believe in the Bible as the Word of God 
+            and Jesus Christ as Lord and Savior. Our mission is to love God, serve others, and 
+            grow together in faith.
+          </p>
+          <p>
+            We hold to traditional Christian values while embracing everyone with the love of Christ. 
+            Our faith guides us to be a beacon of hope and service in our community.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay Connected -->
+    <section class="stay-connected section" aria-labelledby="connected-heading">
+      <div class="container">
+        <h2 id="connected-heading">Stay Connected</h2>
+        <div class="social-links">
+          <a 
+            href="https://www.facebook.com/share/g/1BpyQAzRiH/?mibextid=wwXIfr" 
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit our Facebook page (opens in new tab)"
+          >
+            <span class="social-icon" aria-hidden="true">📘</span>
+            <span>Follow us on Facebook</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>First Baptist Church Bragg City</h3>
+          <address>
+            151 W Second St<br>
+            Bragg City, MO 63827
+          </address>
+        </div>
+        <div class="footer-links">
+          <a href="#main-content" class="back-to-top" aria-label="Back to top of page">
+            Back to Top ↑
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year">2024</span> First Baptist Church Bragg City. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>

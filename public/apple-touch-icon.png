@@ -1,0 +1,8 @@
+<!-- This is a placeholder for apple-touch-icon.png -->
+<!-- In a real deployment, this should be a 180x180 PNG file -->
+<svg width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" fill="#2E5C8A" rx="20"/>
+  <path d="M90 30L60 55v70h60V55l-30-25z" fill="#ffffff"/>
+  <rect x="80" y="90" width="20" height="35" fill="#2E5C8A"/>
+  <circle cx="90" cy="50" r="8" fill="#2E5C8A"/>
+</svg>

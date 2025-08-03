@@ -1,0 +1,109 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content={description} />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- SEO Meta Tags -->
+  <title>{title}</title>
+  <meta name="author" content="First Baptist Church Bragg City" />
+  <meta name="keywords" content="First Baptist Church, Bragg City, Missouri, Southern Baptist, church, faith, worship, community, Dunklin County, Pemiscot County" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fbcbc.org/" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content="https://fbcbc.org/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://fbcbc.org/" />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content="https://fbcbc.org/og-image.jpg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "PlaceOfWorship"],
+      "name": "First Baptist Church Bragg City",
+      "alternateName": "FBC BC",
+      "description": "A small Southern Baptist church committed to serving southeast Missouri through worship, teaching, and fellowship.",
+      "url": "https://fbcbc.org",
+      "logo": "https://fbcbc.org/logo.png",
+      "image": "https://fbcbc.org/church-image.jpg",
+      "telephone": null,
+      "email": null,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "151 W Second St",
+        "addressLocality": "Bragg City",
+        "addressRegion": "MO",
+        "postalCode": "63827",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "36.2242",
+        "longitude": "-89.5542"
+      },
+      "openingHours": [
+        "Su 11:00-12:00",
+        "Su 17:00-18:00", 
+        "We 17:00-18:00"
+      ],
+      "serviceType": "Religious service",
+      "denomination": "Southern Baptist",
+      "foundingDate": null,
+      "areaServed": {
+        "@type": "Place",
+        "name": "Dunklin and Pemiscot Counties, Missouri"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/g/1BpyQAzRiH/?mibextid=wwXIfr"
+      ]
+    }
+  </script>
+  
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <!-- Skip to main content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <slot />
+  
+  <script>
+    // Update copyright year
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('copyright-year');
+    if (yearElement) {
+      yearElement.textContent = currentYear.toString();
+    }
+  </script>
+</body>
+</html>

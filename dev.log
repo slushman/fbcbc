@@ -1,0 +1,21 @@
+
+> fbc-bc-website@0.0.1 dev
+> astro dev
+
+13:39:29 [types] Generated 0ms
+
+ astro  v4.16.18 ready in 47 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+
+13:39:29 watching for file changes...
+13:39:30 [200] / 5ms
+13:41:12 [watch] src/pages/index.astro
+13:41:12 [200] / 4ms
+13:45:32 [watch] src/pages/index.astro
+13:45:32 [200] / 2ms
+13:48:50 [watch] src/pages/index.astro
+13:48:50 [200] / 2ms
+13:49:49 [watch] src/pages/index.astro
+13:49:49 [200] / 2ms
