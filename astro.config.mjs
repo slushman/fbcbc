@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://fbcbc.org',
+  site: 'https://slushman.github.io',
+  base: '/fbcbc',
   build: {
     assets: 'assets'
   }
